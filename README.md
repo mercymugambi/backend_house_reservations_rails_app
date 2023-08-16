@@ -5,7 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 hello-rails-back-end ](#-hello-rails-back-end-)
+- [📖 backend_house_reservations_rails_app ](#-backend_house_reservations_rails_app-)
   - [🛠 Built With ](#-built-with-)
   - [Key Features](#key-features)
   - [💻 Getting Started ](#-getting-started-)
@@ -23,9 +23,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 hello_rails_back_end_app <a name="about-project"></a>
+# 📖 backend_house_reservations_rails_app <a name="about-project"></a>
 
-- This is a greeting app built using rails
+- This is a reservation app built using rails
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -34,7 +34,7 @@
 ## React Link
 
 ```sh
-  https://github.com/mercymugambi/hello-react-front-end/
+  https://github.com/mercymugambi/frontend_house_reservations_react_app/
 ```
 
 ## Key Features
@@ -67,8 +67,8 @@ Example commands:
 
 ```sh
 
-  git clone https://github.com/mercymugambi/hello-rails-back-end.git
-  cd hello-rails-back-end
+  git clone https://github.com/mercymugambi/backend_house_reservations_rails_app.git
+  cd backend_house_reservations_rails_app
 ```
 
 ### Install
@@ -118,7 +118,7 @@ rspec
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **More complex ruby commands.**
-- **More greetings**
+- **More features to reserve houses**
 
 
 <!-- CONTRIBUTING -->
@@ -127,7 +127,7 @@ rspec
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Issues Pages](https://github.com/mercymugambi/hello-rails-back-end/issues)
+Feel free to check the [Issues Pages](https://github.com/mercymugambi/backend_house_reservations_rails_app/issues)
 
 
 <!-- SUPPORT -->
