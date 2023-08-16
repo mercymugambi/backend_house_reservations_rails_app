@@ -33,9 +33,7 @@
 
 ## React Link
 
-```sh
   https://github.com/mercymugambi/frontend_house_reservations_react_app/
-```
 
 ## Key Features
 
