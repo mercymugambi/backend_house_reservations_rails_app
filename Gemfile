@@ -73,3 +73,5 @@ end
 
 gem 'rack-cors'
 gem 'rubocop'
+
+gem 'devise'
