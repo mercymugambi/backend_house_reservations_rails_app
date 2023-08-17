@@ -10,8 +10,10 @@ class Ability
     if user.admin?
       can :manage, House
     else
-      # Define other permissions for non-admin users
+      can :read, House # Normal users can read (view) houses
     end
+      # Define other permissions for non-admin users
+    
     # Define abilities for the user here. For example:
     #
     #   return unless user.present?
