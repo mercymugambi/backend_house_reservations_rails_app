@@ -67,4 +67,6 @@ class HousesController < ApplicationController
     def house_params
       params.require(:house).permit(:icon, :name, :description, :user_id)
     end
+
+    
 end

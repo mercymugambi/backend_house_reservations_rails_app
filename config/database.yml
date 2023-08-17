@@ -23,8 +23,8 @@ default: &default
   # password: ?Shanice123
   # username: postgres
 
-  password: joy
-  username: postgres
+  # password: joy
+  # username: postgres
 
   # password: 
   # username: 
