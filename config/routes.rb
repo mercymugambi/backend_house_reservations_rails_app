@@ -5,13 +5,15 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'root#index'
 
-  resources :houses, only: %i[index show new create destroy] do
-    resources :reservations, only: %i[index show new create destroy]
-  end
+  # resources :houses, only: %i[index show new create destroy] do
+  #   resources :reservations, only: %i[index show new create destroy]
+  # end
 
   namespace :api do
     namespace :v1 do
       get 'random_greeting', to: 'messages#random_greeting'
+      resources :houses, only: [:index, :create, :new, :show, :destroy]
+      resources :reservations, only: [:index, :create, :new, :show, :destroy]
     end
   end
 end
