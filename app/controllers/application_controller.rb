@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(_resource)
-    houses_path
+    api_v1_houses_path
   end
 end
