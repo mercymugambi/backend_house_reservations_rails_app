@@ -4,8 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
-         has_many :reservations
-         has_many :houses, through: :reservations
+  has_many :reservations
+  has_many :houses, through: :reservations
 
   validates :name, :email, :password, presence: true
 end
