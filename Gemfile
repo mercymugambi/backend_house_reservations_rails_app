@@ -75,3 +75,5 @@ gem 'rack-cors'
 gem 'rubocop'
 
 gem 'devise'
+
+gem 'cancancan'

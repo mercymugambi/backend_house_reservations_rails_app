@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable
 
   has_many :reservations
-  has_many :houses, through: :reservations
+  scope :admins, -> { where(admin: true) }
 
   validates :name, :email, :password, presence: true
 end
