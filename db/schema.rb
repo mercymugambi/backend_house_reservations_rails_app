@@ -18,6 +18,11 @@ ActiveRecord::Schema[7.0].define(version: 20_230_817_224_646) do
     t.string 'icon'
     t.string 'name'
     t.string 'description'
+    t.integer 'bedrooms'
+    t.integer 'bathrooms'
+    t.integer 'rent'
+    t.integer 'security_deposit'
+    t.string 'contact_phone_number'
     t.bigint 'admin_user_id', null: false
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
@@ -32,7 +37,8 @@ ActiveRecord::Schema[7.0].define(version: 20_230_817_224_646) do
 
   create_table 'reservations', force: :cascade do |t|
     t.string 'city'
-    t.date 'reservation_date'
+    t.date 'reservation_checkin_date'
+    t.date 'reservation_checkout_date'
     t.bigint 'user_id', null: false
     t.bigint 'house_id', null: false
     t.datetime 'created_at', null: false
