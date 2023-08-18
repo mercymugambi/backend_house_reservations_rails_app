@@ -1,9 +1,11 @@
-class HousesController < ApplicationController
+class Api::V1::HousesController < ApplicationController
+  load_and_authorize_resource
   before_action :set_house, only: %i[show edit update destroy]
 
   # GET /houses or /houses.json
   def index
     @houses = House.all
+    render json: @houses
   end
 
   # GET /houses/1 or /houses/1.json

@@ -4,8 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
+  has_many :houses, foreign_key: 'admin_user_id'
   has_many :reservations
-  has_many :houses, through: :reservations
+  scope :admins, -> { where(admin: true) }
 
   validates :name, :email, :password, presence: true
 end
