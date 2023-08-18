@@ -11,9 +11,10 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      get 'random_greeting', to: 'messages#random_greeting'
-      resources :houses, only: [:index, :create, :new, :show, :destroy]
-      resources :reservations, only: [:index, :create, :new, :show, :destroy]
+      # get 'random_greeting', to: 'messages#random_greeting'
+      resources :houses, only: %i[index create new show destroy] do
+        resources :reservations, only: %i[index create new show destroy]
+      end
     end
   end
 end

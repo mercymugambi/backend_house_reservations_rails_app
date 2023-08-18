@@ -1,10 +1,7 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
   def initialize(user)
-
     user ||= User.new # Guest user
 
     if user.admin?
@@ -12,8 +9,8 @@ class Ability
     else
       can :read, House # Normal users can read (view) houses
     end
-      # Define other permissions for non-admin users
-    
+    # Define other permissions for non-admin users
+
     # Define abilities for the user here. For example:
     #
     #   return unless user.present?
