@@ -119,6 +119,12 @@ rspec
 - Twitter: [@hasnatking1947](https://twitter.com/hasnatking1947)
 - LinkedIn: [Hasnat ali](https://www.linkedin.com/feed/?trk=homepage-basic_google-sign-in-submit)
 
+👤 **Joy Phoebe**
+
+- GitHub: [@joyapisi](https://github.com/joyapisi)
+- Twitter: [@joyphoebe300](https://twitter.com/joyphoebe300)
+- LinkedIn: [joyapisi](https://www.linkedin.com/in/joyapisi)
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **More complex ruby commands.**
