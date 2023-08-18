@@ -1,8 +1,3 @@
-# class House < ApplicationRecord
-#   belongs_to :user
-#   belongs_to :reservations
-# end
-
 # A house can have many reservations, and each reservation is associated with one user.
 # A house belongs to an admin user, and a house can have many reservations.
 class House < ApplicationRecord
