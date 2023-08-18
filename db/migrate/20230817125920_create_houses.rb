@@ -4,6 +4,11 @@ class CreateHouses < ActiveRecord::Migration[7.0]
       t.string :icon
       t.string :name
       t.string :description
+      t.integer :bedrooms
+      t.integer :bathrooms
+      t.integer :rent
+      t.integer :security_deposit
+      t.string :contact_phone_number
       t.references :user, null: false, foreign_key: true
 
       t.timestamps

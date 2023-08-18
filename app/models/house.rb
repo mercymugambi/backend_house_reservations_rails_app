@@ -1,4 +1,3 @@
 class House < ApplicationRecord
-  belongs_to :user
-  belongs_to :reservations
+  has_many :reservations
 end

@@ -1,4 +1,4 @@
-class HousesController < ApplicationController
+class Api::V1::HousesController < ApplicationController
   before_action :set_house, only: %i[show edit update destroy]
 
   # GET /houses or /houses.json
