@@ -10,7 +10,7 @@ Devise.setup do |config|
   config.navigational_formats = ['*/*', :html, :turbo_stream]
 
   config.jwt do |jwt|
-    jwt.secret = ENV['DEVISE_JWT_SECRET_KEY'] # Store your secret key securely
+    jwt.secret = ENV.fetch('DEVISE_JWT_SECRET_KEY', nil) # Store your secret key securely
     jwt.dispatch_requests = [
       ['POST', %r{^/users/sign_in$}]
     ]
@@ -19,7 +19,7 @@ Devise.setup do |config|
     ]
     jwt.expiration_time = 1.day.to_i
   end
-  
+
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.

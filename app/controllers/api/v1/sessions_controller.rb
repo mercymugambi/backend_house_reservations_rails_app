@@ -11,11 +11,15 @@ module Api
           render json: { message: 'Invalid email or password.' }, status: :unprocessable_entity
         end
       end
+
       private
+
       def session_params
         params.require(:user).permit(:email, :password)
       end
+
       protected
+
       def json_request?
         request.format.json?
       end

@@ -3,7 +3,6 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-         :jwt_authenticatable
 
   has_many :houses, foreign_key: 'admin_user_id'
   has_many :reservations
