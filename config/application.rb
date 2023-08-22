@@ -9,14 +9,14 @@ Bundler.require(*Rails.groups)
 module HelloRailsBackEnd
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.0
-
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3001' # The origin of your React app
-        resource '*', headers: :any, methods: %i[get post put patch delete options]
+        origins '*' # Update this to match your React app's URL
+        resource '*', headers: :any, methods: %i[get post put patch delete options head] # Update this to match your endpoint
       end
     end
+
+    config.load_defaults 7.0
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -25,5 +25,6 @@ module HelloRailsBackEnd
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.api_only = true
   end
 end

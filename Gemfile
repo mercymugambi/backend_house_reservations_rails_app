@@ -71,9 +71,12 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'rack-cors'
 gem 'rubocop'
 
 gem 'devise'
 
 gem 'cancancan'
+
+gem 'rack-cors', require: 'rack/cors'
+
+gem 'devise-jwt', '~> 0.11.0'
