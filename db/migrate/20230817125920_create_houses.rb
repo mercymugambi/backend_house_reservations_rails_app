@@ -3,6 +3,7 @@ class CreateHouses < ActiveRecord::Migration[7.0]
     create_table :houses do |t|
       t.string :icon
       t.string :name
+      t.string :city
       t.string :description
       t.integer :bedrooms
       t.integer :bathrooms
