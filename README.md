@@ -33,7 +33,7 @@
 
 ## React Link
 
-  https://github.com/mercymugambi/frontend_house_reservations_react_app/
+https://github.com/mercymugambi/frontend_house_reservations_react_app/
 
 ## Key Features
 
@@ -105,10 +105,10 @@ To run spec tests, run the following command:
 rspec
 ```
 
-
 ## 👥 Authors <a name="authors"></a>
 
 👥 **Mercy Mugambi**
+
 - GitHub: [@mercymugambi](https://github.com/mercymugambi)
 - Twitter: [@MercyMugambi15](https://twitter.com/MercyMugambi15)
 - LinkedIn: [mercymugambi](https://www.linkedin.com/in/mercymugambi)
@@ -125,11 +125,16 @@ rspec
 - Twitter: [@joyphoebe300](https://twitter.com/joyphoebe300)
 - LinkedIn: [joyapisi](https://www.linkedin.com/in/joyapisi)
 
+👤 **Esther Mawioo**
+
+- Github: [EstherMawioo](https://github.com/mumo-esther/mumo-esther)
+- Twitter: [EstherMawioo](https://twitter.com/EstherMawioo)
+- LinkedIn: [EstherMawioo](https://www.linkedin.com/in/esther-mawioo-58b636225/)
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **More complex ruby commands.**
 - **More features to reserve houses**
-
 
 <!-- CONTRIBUTING -->
 
@@ -139,20 +144,17 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [Issues Pages](https://github.com/mercymugambi/backend_house_reservations_rails_app/issues)
 
-
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project kindly give it a star⭐️.
 
-
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse.
-
 
 <!-- LICENSE -->
 
