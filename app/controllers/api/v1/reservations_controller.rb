@@ -22,15 +22,22 @@ class Api::V1::ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
 
-    respond_to do |format|
-      if @reservation.save
-        format.html { redirect_to reservation_url(@reservation), notice: 'Reservation was successfully created.' }
-        format.json { render :show, status: :created, location: @reservation }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @reservation.errors, status: :unprocessable_entity }
-      end
+    # respond_to do |format|
+    #   if @reservation.save
+    #     format.html { redirect_to reservation_url(@reservation), notice: 'Reservation was successfully created.' }
+    #     format.json { render :show, status: :created, location: @reservation }
+    #   else
+    #     format.html { render :new, status: :unprocessable_entity }
+    #     format.json { render json: @reservation.errors, status: :unprocessable_entity }
+    #   end
+    # end
+
+    if @reservation.save
+      render json: { status: "success", message: "Your reservation was created successfully!" }, status: :created
+    else
+      render json: { status: "failed", errors: @reservation.errors.full_messages }, status: :unprocessable_entity
     end
+  end
   end
 
   # PATCH/PUT /reservations/1 or /reservations/1.json
@@ -65,6 +72,6 @@ class Api::V1::ReservationsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def reservation_params
-    params.require(:reservation).permit(:city, :reservation_date, :user_id, :house_id)
+    params.require(:reservation).permit(:city, :user_id, :house_id)
   end
 end
