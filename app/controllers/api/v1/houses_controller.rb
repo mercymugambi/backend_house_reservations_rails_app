@@ -22,17 +22,7 @@ class Api::V1::HousesController < ApplicationController
   # POST /houses or /houses.json
   def create
     @house = House.new(house_params)
-    # @house = House.new(params[:house]) 
-
-    # respond_to do |format|
-    #   if @house.save
-    #     format.html { redirect_to house_url(@house), notice: 'House was successfully created.' }
-    #     format.json { render :show, status: :created, location: @house }
-    #   else
-    #     format.html { render :new, status: :unprocessable_entity }
-    #     format.json { render json: @house.errors, status: :unprocessable_entity }
-    #   end
-    # end
+    
     if @house.save
       render json: { status: "success", message: "House created successfully!" }, status: :created
     else
