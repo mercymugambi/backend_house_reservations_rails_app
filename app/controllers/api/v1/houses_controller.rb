@@ -63,6 +63,11 @@ class Api::V1::HousesController < ApplicationController
     end
   end
 
+  def unique_cities
+    cities = House.distinct.pluck(:city)
+    render json: cities
+  end
+  
   private
 
   # Use callbacks to share common setup or constraints between actions.
