@@ -1,5 +1,5 @@
 class Api::V1::HousesController < ApplicationController
-  load_and_authorize_resource
+  # load_and_authorize_resource
   before_action :set_house, only: %i[show edit update destroy]
 
   # GET /houses or /houses.json
@@ -23,14 +23,10 @@ class Api::V1::HousesController < ApplicationController
   def create
     @house = House.new(house_params)
 
-    respond_to do |format|
-      if @house.save
-        format.html { redirect_to house_url(@house), notice: 'House was successfully created.' }
-        format.json { render :show, status: :created, location: @house }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @house.errors, status: :unprocessable_entity }
-      end
+    if @house.save
+      render json: { status: 'success', message: 'House created successfully!' }, status: :created
+    else
+      render json: { status: 'failed', errors: @house.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
@@ -57,6 +53,16 @@ class Api::V1::HousesController < ApplicationController
     end
   end
 
+  def unique_cities
+    cities = House.distinct.pluck(:city)
+    render json: cities
+  end
+
+  def unique_houses
+    houses = House.distinct.pluck(:house_name)
+    render json: houses
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
@@ -66,6 +72,6 @@ class Api::V1::HousesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def house_params
-    params.require(:house).permit(:icon, :name, :description, :user_id)
+    params.require(:house).permit(:icon, :house_name, :city, :description, :bedrooms, :bathrooms, :rent, :security_deposit, :contact_phone_number, :admin_user_id)
   end
 end
