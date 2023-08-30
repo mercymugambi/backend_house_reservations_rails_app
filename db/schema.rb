@@ -16,7 +16,8 @@ ActiveRecord::Schema[7.0].define(version: 20_230_817_224_646) do
 
   create_table 'houses', force: :cascade do |t|
     t.string 'icon'
-    t.string 'name'
+    t.string 'house_name'
+    t.string 'city'
     t.string 'description'
     t.integer 'bedrooms'
     t.integer 'bathrooms'
@@ -36,9 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 20_230_817_224_646) do
   end
 
   create_table 'reservations', force: :cascade do |t|
-    t.string 'city'
-    t.date 'reservation_checkin_date'
-    t.date 'reservation_checkout_date'
+    t.date 'date'
     t.bigint 'user_id', null: false
     t.bigint 'house_id', null: false
     t.datetime 'created_at', null: false
@@ -53,10 +52,6 @@ ActiveRecord::Schema[7.0].define(version: 20_230_817_224_646) do
     t.string 'reset_password_token'
     t.datetime 'reset_password_sent_at'
     t.datetime 'remember_created_at'
-    t.string 'confirmation_token'
-    t.datetime 'confirmed_at'
-    t.datetime 'confirmation_sent_at'
-    t.string 'unconfirmed_email'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
     t.string 'name'

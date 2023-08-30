@@ -22,11 +22,11 @@ class Api::V1::HousesController < ApplicationController
   # POST /houses or /houses.json
   def create
     @house = House.new(house_params)
-    
+
     if @house.save
-      render json: { status: "success", message: "House created successfully!" }, status: :created
+      render json: { status: 'success', message: 'House created successfully!' }, status: :created
     else
-      render json: { status: "failed", errors: @house.errors.full_messages }, status: :unprocessable_entity
+      render json: { status: 'failed', errors: @house.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
@@ -62,7 +62,7 @@ class Api::V1::HousesController < ApplicationController
     houses = House.distinct.pluck(:house_name)
     render json: houses
   end
-  
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
