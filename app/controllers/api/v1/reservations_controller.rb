@@ -3,8 +3,20 @@ class Api::V1::ReservationsController < ApplicationController
 
   # GET /reservations or /reservations.json
   def index
-    @reservations = Reservation.all
-    render json: @reservations
+    # @reservations = Reservation.all
+    # render json: @reservations
+    @user_reservations = Reservation.where(user_id: params[:user_id])
+    @reservations_info = []
+    @user_reservations.each do |reservation|
+      @reservations_info.push({
+                                id: reservation.id,
+                                user: reservation.user.username,
+                                house: reservation.house.name,
+                                city: reservation.city.name,
+                                date: reservation.date
+                              })
+    end
+    render json: @reservations_info
   end
 
   # GET /reservations/1 or /reservations/1.json
@@ -65,6 +77,6 @@ class Api::V1::ReservationsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def reservation_params
-    params.require(:reservation).permit(:user_id, :house_id, :city)
+    params.require(:reservation).permit(:user_id, :house_id, :city, :date)
   end
 end
