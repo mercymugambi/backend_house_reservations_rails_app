@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :houses, only: %i[index create new show destroy] do
         collection do
           get 'unique_cities', to: 'houses#unique_cities'
+          get 'unique_houses', to: 'houses#unique_houses'
         end  
         resources :reservations, only: %i[index create new show destroy]
       end
