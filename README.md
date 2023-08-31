@@ -35,7 +35,9 @@
 - <a href="https://www.postgresql.org/">Postgresql</a>
 - <a href="https://rspec.info/">Rspec</a>
 
-### :rocket: Live API Demo <a name="live-demo"></a>
+### :rocket: Front End API <a name="live-demo"></a>
+https://github.com/mercymugambi/frontend_house_reservations_react_app/
+
 
   - <a href="">Live Link</a>
 
@@ -128,11 +130,21 @@ To test the web app run the following command:
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+👤 **Esther Mawioo**
+
+- Github: [EstherMawioo](https://github.com/mumo-esther/mumo-esther)
+- Twitter: [EstherMawioo](https://twitter.com/EstherMawioo)
+- LinkedIn: [EstherMawioo](https://www.linkedin.com/in/esther-mawioo-58b636225/)
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [add comments for and likes houses]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+- **API Documentation**
+- **More complex ruby commands.**
+- **More features to reserve houses**
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -141,6 +153,7 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/mercymugambi/backend_house_reservations_rails_app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -153,6 +166,7 @@ Give a ⭐️ if you like this project!
 -  We would like to thank microverse community for the support and guidance, Thank you [Murat Korkmaz](https://www.behance.net/muratk)  on Behance for the Awesome Design Template.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 📝 License <a name="license"></a>
 
