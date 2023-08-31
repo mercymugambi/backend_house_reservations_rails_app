@@ -326,6 +326,7 @@ DEPENDENCIES
   rails (~> 7.0.7)
   rspec-rails
   rswag
+  rswag-ui
   rubocop
   selenium-webdriver
   sprockets-rails

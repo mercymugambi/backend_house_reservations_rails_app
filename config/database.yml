@@ -26,8 +26,8 @@ default: &default
   # password: joy
   # username: postgres
 
-  password: database
-  username: database
+  # password: database
+  # username: database
 
   # password: 
   # username: 
