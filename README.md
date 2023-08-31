@@ -1,46 +1,53 @@
 <a name="readme-top"></a>
 
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 backend_house_reservations_rails_app ](#-backend_house_reservations_rails_app-)
-  - [🛠 Built With ](#-built-with-)
-  - [Key Features](#key-features)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-    - [Run tests](#run-tests)
-  - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+- [📖 About the Project](#about-project)
+  - [:camera: screenshots](#screenshots)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 
-<!-- PROJECT DESCRIPTION -->
+- [📝 License](#license)
 
-# 📖 backend_house_reservations_rails_app <a name="about-project"></a>
+# 🏥 Houses Resrvation API <a name="about-project"></a>
 
-- This is a reservation app built using rails
+> The Houses Resrvation API allows users to create account and create new House and can reserved the House.
+
+### Frontend Repository
+  <a href="https://github.com/mercymugambi/frontend_house_reservations_react_app.git">Final capstone front end</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- Ruby on Rails
+### Tech Stack <a name="tech-stack"></a>
 
-## React Link
+- <a href="https://www.ruby-lang.org/es/">ROR</a>
+- <a href="https://www.postgresql.org/">Postgresql</a>
+- <a href="https://rspec.info/">Rspec</a>
 
+### :rocket: Front End API <a name="live-demo"></a>
 https://github.com/mercymugambi/frontend_house_reservations_react_app/
 
-## Key Features
 
-- Ruby syntax and use of linters
-- Rails controllers
+  - <a href="">Live Link</a>
 
-<!-- GETTING STARTED -->
+### Key Features <a name="key-features"></a>
+
+- [x] Create user based on role
+- [x] Create house and view all houses
+- [x] Create reservations and view all reservations
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -50,80 +57,78 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-Example command:
-
-```sh
-1.use a browser
-2.use cable internet
-```
+- Command line or terminal
+- IDE such as VsCode.
+- Rails needs to be installed on your system.
 
 ### Setup
 
 Clone this repository to your desired folder:
-
-Example commands:
+Example command:
 
 ```sh
-
   git clone https://github.com/mercymugambi/backend_house_reservations_rails_app.git
-  cd backend_house_reservations_rails_app
+  cd full-stack-capstone-back-end
+
 ```
 
 ### Install
 
-Install this project with:
-
 Example command:
 
 ```sh
-bundle && npm install
+  cd full-stack-capstone-back-end
+  bundle install (install all dependencies)
+  rails db:create (to create database)
+  rails db:migrate (to migrate tables)
+
 ```
 
 ### Usage
 
-To run the project, execute the following command:
-
-Example command:
+To run the project redirecting to the root directory of the project and run the following command:
 
 ```sh
-- Open the terminal to play with the commands.
+ bin/rails server (to run web API)
+
 ```
 
-### Run tests
+### Test
 
-To run tests for the linter, run the following command:
-
-Example command:
+To test the web app run the following command:
 
 ```sh
-rubocop -A
-```
+ rspec spec ( to test the web API)
 
-To run spec tests, run the following command:
-
-```sh
-rspec
 ```
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Hasnat Ali**
+
+- GitHub: [Hasnat Ali](https://github.com/hasnatali1947)
+- LinkedIn: [Hasnat Ali](https://www.linkedin.com/in/hasnattali/)
+- LinkedIn: [Hasnat Ali](https://twitter.com/hasnatking1947)
+  
+👥 **Joy Phoebe**
+
+- GitHub: [joyapisi](https://github.com/joyapisi)
+- Twitter: [joyapisi](https://twitter.com/joyphoebe300)
+- LinkedIn: [joyapisi](https://www.linkedin.com/in/joyapisi/)
+  
 👥 **Mercy Mugambi**
 
 - GitHub: [@mercymugambi](https://github.com/mercymugambi)
 - Twitter: [@MercyMugambi15](https://twitter.com/MercyMugambi15)
 - LinkedIn: [mercymugambi](https://www.linkedin.com/in/mercymugambi)
 
-👤 **Hasnat khan**
+👤 **Esther Mawioo**
 
-- GitHub: [@hasnatali1947](https://github.com/hasnatali1947)
-- Twitter: [@hasnatking1947](https://twitter.com/hasnatking1947)
-- LinkedIn: [Hasnat ali](https://www.linkedin.com/feed/?trk=homepage-basic_google-sign-in-submit)
-
-👤 **Joy Phoebe**
-
-- GitHub: [@joyapisi](https://github.com/joyapisi)
-- Twitter: [@joyphoebe300](https://twitter.com/joyphoebe300)
-- LinkedIn: [joyapisi](https://www.linkedin.com/in/joyapisi)
+- Github: [EstherMawioo](https://github.com/mumo-esther/mumo-esther)
+- Twitter: [EstherMawioo](https://twitter.com/EstherMawioo)
+- LinkedIn: [EstherMawioo](https://www.linkedin.com/in/esther-mawioo-58b636225/)
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 👤 **Esther Mawioo**
 
@@ -133,30 +138,35 @@ rspec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- [add comments for and likes houses]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- **API Documentation**
 - **More complex ruby commands.**
 - **More features to reserve houses**
 
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Issues Pages](https://github.com/mercymugambi/backend_house_reservations_rails_app/issues)
+Feel free to check the [issues page](https://github.com/mercymugambi/backend_house_reservations_rails_app/issues).
 
-<!-- SUPPORT -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project kindly give it a star⭐️.
+Give a ⭐️ if you like this project!
 
-<!-- ACKNOWLEDGEMENTS -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse.
+-  We would like to thank microverse community for the support and guidance, Thank you [Murat Korkmaz](https://www.behance.net/muratk)  on Behance for the Awesome Design Template.
 
-<!-- LICENSE -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 📝 License <a name="license"></a>
 

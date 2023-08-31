@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
+gem 'factory_bot_rails'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.7'
 
@@ -67,6 +69,7 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
@@ -80,3 +83,6 @@ gem 'cancancan'
 gem 'rack-cors', require: 'rack/cors'
 
 gem 'devise-jwt', '~> 0.11.0'
+
+gem 'rswag'
+gem 'rswag-ui'
