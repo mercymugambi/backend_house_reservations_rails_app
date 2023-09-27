@@ -123,8 +123,6 @@ To run the project redirecting to the root directory of the project and run the 
 
 - [add comments for and likes houses]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
