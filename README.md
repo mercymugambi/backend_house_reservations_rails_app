@@ -114,8 +114,6 @@ To run the project redirecting to the root directory of the project and run the 
 - Github: [EstherMawioo](https://github.com/mumo-esther/mumo-esther)
 - Twitter: [EstherMawioo](https://twitter.com/EstherMawioo)
 - LinkedIn: [EstherMawioo](https://www.linkedin.com/in/esther-mawioo-58b636225/)
-  
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
