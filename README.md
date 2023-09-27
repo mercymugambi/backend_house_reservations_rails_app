@@ -133,8 +133,6 @@ Feel free to check the [issues page](https://github.com/mercymugambi/backend_hou
 
 Give a ⭐️ if you like this project!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 -  We would like to thank microverse community for the support and guidance, Thank you [Murat Korkmaz](https://www.behance.net/muratk)  on Behance for the Awesome Design Template.
